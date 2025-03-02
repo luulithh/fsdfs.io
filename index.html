@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-приложение</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="fulscreen" href="fulscreen.js">
+    <script>
+
+        let tg = window.Telegram.WebApp;
+        tg.requestFullscreen();
+        tg.lockOrientation("landscape");
+        
+        </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать в наше мини-приложение!</h1>
+</body>
+</html>
